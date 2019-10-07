@@ -1,0 +1,15 @@
+h1{
+    display: block;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-image: url("../images/logs.jpg");
+    margin: 5px;
+    height: 75px;
+}
+
+.room{
+    max-width:  450px;
+    max-height: 450px;
+    display: inline-block;
+}
+
