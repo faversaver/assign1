@@ -1,6 +1,7 @@
 const express = require("express");
 const exphbs = require('express-handlebars');
 const app = express();
+const PORT = process.env.PORT || 3000;
 
 app.use(express.static('public'));
 app.engine('handlebars', exphbs());
@@ -18,8 +19,7 @@ app.get('/registration', function (req, res) {
     res.render('registration');
 });
 
-
-app.listen (3000,()=>{
+app.listen (PORT,()=>{
     console.log(`webserver is connected! :D` );
 
 });
